@@ -19,19 +19,25 @@ body {
   margin-bottom: 16px;
 }
 
-p , h2, h3 {
-  margin: 0px;
-}
+ p{
+  margin-top: 0px;
+ }
+
 li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 6px;
+  list-style: none;
 }
 
 img {
-  margin-right: 10px;
+ margin-right: 10px;
+ width:30px; 
+ height: 30px;
 }
 
-.wrap {
-  
+.title-country {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.flags-name {
+  display: flex;
 }

@@ -45,8 +45,10 @@ function clearingMarkup() {
 function markupCountryList (countries) {
     const markup = countries.map(country => {
         return `<li>
-        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="30" hight="20">
+        <div class="flags-name">
+        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}">
         <p>${country.name.official}</p>
+        </div>
         </li>`;
     })
     .join('');
@@ -56,8 +58,10 @@ function markupCountryList (countries) {
 function markupOneCountry(countries) {
     const markup = countries.map(country => {
         return `<li>
-        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="30" hight="20">
-        <p>${country.name.official}</p>
+        <div class="flags-name">
+        <img src="${country.flags.svg}" alt="Flag of ${country.name.official}">
+        <p class="title-country">${country.name.official}</p>
+        </div>
         <div class="wrap">
         <p><b>Capital</b>: ${country.capital}</p>
         <p><b>Population</b>: ${country.population}</p>
