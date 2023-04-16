@@ -18,3 +18,12 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+p , h2, h3 {
+  margin: 0px;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
