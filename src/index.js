@@ -58,9 +58,11 @@ function markupOneCountry(countries) {
         return `<li>
         <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="30" hight="20">
         <p>${country.name.official}</p>
+        <div class="wrap">
         <p><b>Capital</b>: ${country.capital}</p>
         <p><b>Population</b>: ${country.population}</p>
         <p><b>Languages</b>: ${Object.values(country.languages)}</p>
+        </div>
         </li>`;
     })
     .join('');

@@ -25,5 +25,13 @@ p , h2, h3 {
 li {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  margin-bottom: 6px;
+}
+
+img {
+  margin-right: 10px;
+}
+
+.wrap {
+  
 }
